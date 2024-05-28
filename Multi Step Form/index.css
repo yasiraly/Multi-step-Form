@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-image: url(bg.webp);
+}
+
+.border {
+    border-bottom: 7px solid white;
+}
+
+#container,
+#container2,
+#container3 {
+    width: 30vw;
+    height: 76vh;
+    background: conic-gradient(from 90deg at 50% 0%, #111, 50%, #222, #111);
+    opacity: 0.8;
+    margin: 5% auto;
+    color: white;
+    transition: all .5s;
+   
+}
+#container:hover,
+#container2:hover,
+#container3:hover {
+    box-shadow: 2px 2px 7px 4px #fff;
+}
+
+#container2 {
+    display: none;
+}
+
+#container3 {
+    display: none;
+
+}
+
+h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+input {
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+
+}
+
+.inp {
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.599);
+    justify-content: center;
+}
+
+#fname-res,
+#lname-res,
+#tel-res,
+#mdegree-res,
+#Intdegree-res,
+#BSdegree-res,
+#email-res,
+#pass-res,
+#confirm-res {
+    color: red;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 1rem;
+    width: 26%;
+}
+
+button {
+    transition: 0.2s;
+
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 0.8rem;
+    width: 17%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#backbtn1,
+#backbtn2 {
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 0.8rem;
+    width: 17%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#backbtn1:hover,
+#backbtn2:hover {
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+
+#btn1:hover {
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+
+#btn2:hover {
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+
+#btn3:hover {
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: none;
+
+}
+
+h2 {
+    padding-top: 13rem;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.td{
+    margin-top: 3rem;
+    padding: 1.35rem;
+    text-align: center;
+}
+@media (max-width:320px) {
+
+    #btn1,
+    #btn2,
+    #btn3,
+    #backbtn1,
+    #backbtn2 {
+        width: 30%;
+        margin-top: 0;
+    }
+
+    #container,
+    #container2,
+    #container3 {
+        width: 90%;
+        height: 100%;
+    }
+}
